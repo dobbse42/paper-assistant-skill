@@ -7,7 +7,7 @@
  dependencies:
    # Pip dependencies on PyPI
    python:
-      - arxiv
+     - arxiv
 #     - requests
 #     - gensim
 #
