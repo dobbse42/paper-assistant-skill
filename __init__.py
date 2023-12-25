@@ -1,4 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
+import arxiv
 
 from .arxiv_handler import get_pdf
 
