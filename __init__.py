@@ -1,6 +1,6 @@
 from mycroft import MycroftSkill, intent_file_handler
 
-from .code import (Paper)
+from .code import Paper
 
 class PaperAssistant(MycroftSkill):
     def __init__(self):
