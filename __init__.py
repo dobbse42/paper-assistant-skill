@@ -1,9 +1,11 @@
 from mycroft import MycroftSkill, intent_file_handler
 
+import Paper
 
 class PaperAssistant(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
+        self.log.info("assistant has loaded")
 
     @intent_file_handler('assistant.paper.intent')
     def handle_assistant_paper(self, message):
