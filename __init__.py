@@ -12,6 +12,7 @@ class PaperAssistant(MycroftSkill):
         self.log.info("assistant has entered intent handler")
         self.speak_dialog('assistant.paper')
         fn = get_pdf()
+        self.speak(fn)
 
 
 def create_skill():
