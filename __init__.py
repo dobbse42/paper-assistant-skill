@@ -1,6 +1,6 @@
 from mycroft import MycroftSkill, intent_file_handler
 
-from .Paper import Paper
+from .arxiv_handler import get_pdf
 
 class PaperAssistant(MycroftSkill):
     def __init__(self):
@@ -12,6 +12,8 @@ class PaperAssistant(MycroftSkill):
         self.log.info("assistant has entered intent handler")
         self.speak_dialog('assistant.paper')
         self.speak_dialog('assistant.research')
+        fn = get_pdf()
+        self.speak_dialog(fn)
 
 
 def create_skill():
