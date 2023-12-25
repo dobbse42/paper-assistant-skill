@@ -8,8 +8,6 @@
    # Pip dependencies on PyPI
    python:
       - arxiv
-      - nltk
-      - pypdf
 #     - requests
 #     - gensim
 #
