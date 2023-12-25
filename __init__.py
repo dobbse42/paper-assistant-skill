@@ -7,7 +7,9 @@ class PaperAssistant(MycroftSkill):
 
     @intent_file_handler('assistant.paper.intent')
     def handle_assistant_paper(self, message):
+        self.log.info("assistant has entered intent handler")
         self.speak_dialog('assistant.paper')
+        self.speak_dialog('assistant.research')
 
 
 def create_skill():
